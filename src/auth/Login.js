@@ -22,7 +22,7 @@ const Login = () => {
             alert('Email & Password should not be empty!!!')
         }
         else {
-            axios.post('http://127.0.0.1:5000/auth/login', data).then(res => {
+            axios.post('https://mynotes-exfb.onrender.com/auth/login', data).then(res => {
                 console.log(res.data.email, data.email)
                 console.log(res.data)
                 if (res.data.access !== '' && res.data.email === data.email) {

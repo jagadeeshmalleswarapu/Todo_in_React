@@ -27,7 +27,7 @@ const Register = () => {
             alert('Email & Password should not be empty!!!')
         }
         else {
-            axios.post('http://127.0.0.1:5000/auth/register', data).then(res => {
+            axios.post('https://mynotes-exfb.onrender.com/auth/register', data).then(res => {
                 console.log(res.data.email, data.email)
                 if (res.data.email === data.email) {
                     navigate('/login')

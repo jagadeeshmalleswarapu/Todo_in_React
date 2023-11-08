@@ -25,6 +25,23 @@ function App() {
           <Route path='/addNotes' element={<AddNotes />} />
           <Route path='/update' element={<UpdateToDo />} />
           <Route path='/logout' element={<Logout />} />
+          <Route path="*" element={
+          <main style={{ padding: "1rem", color:'darkred',textAlign:'center' }}>
+          <div className="container" style={{backgroundColor:'lightgoldenrodyellow'}}>
+            <br/>
+            <br/>
+            <br/><br/><br/><hr/><br/>
+          <h3>There's nothing here!....</h3><br/>
+          <h1>404-Error Page Not Found</h1>
+          <h5>Please go back...!!!</h5>
+          <br/><br/>
+            <hr/>
+          <br/><br/>
+          <br/><br/><br/><br/>
+          <br/><br/><br/><br/>
+          </div>
+        </main>
+        }/>
         </Routes>
       </BrowserRouter>
 

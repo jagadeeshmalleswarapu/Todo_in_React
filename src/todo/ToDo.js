@@ -4,7 +4,7 @@ import axios from 'axios'
 import Logout from '../auth/Logout'
 
 const ToDo = () => {
-    const BASE_URL = 'http://127.0.0.1:5000/notes'
+    const BASE_URL = 'https://mynotes-exfb.onrender.com/notes'
     const navigate = useNavigate()
     const [ResData, setResData] = useState([])
     useEffect(() => {

@@ -8,7 +8,7 @@ const UpdateToDo = () => {
     const [Note, setNote] = useState({
         "note":""
     })
-    const BASE_URL = 'http://127.0.0.1:5000/notes/'
+    const BASE_URL = 'https://mynotes-exfb.onrender.com/notes/'
     var id = location.state.id
     useEffect(() => {
         if (sessionStorage.getItem('jwt')) {
